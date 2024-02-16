@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tojbi</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto">
+    <div class="mt-20">
+      <h3 class="text-center text-4xl font-bold text-purple-700">
+        Digital Tasbih
+      </h3>
+    </div>
+    <div
+      class="grid grid-cols-1 lg:grid-cols-3 mt-20 justify-center items-center mx-7 gap-3"
+    >
+      <!-- ---------------Subhan allah---------- -->
+
+      <div class="border border-sky-600 rounded-2xl">
+        <div class="text-black h-[17%] p-6 rounded-md">
+          <h4 class="text-center text-2xl">Subhan Allah</h4>
+          <p class="text-center text-2xl mt-3">
+            <span id="subhanAllah-display">0</span>
+          </p>
+          <div class="flex justify-center gap-2 mt-3">
+            <button
+              id="click-SubhanAllah-Decrement"
+              class="bg-red-600 p-4 rounded-xl"
+            >
+              DECREMENT
+            </button>
+            <button
+              id="click-SubhanAllah-increment"
+              class="bg-green-600 p-4 rounded-xl"
+            >
+              INCREMENT
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------Alhamdulliah------------ -->
+
+      <div class="border border-sky-600 rounded-2xl">
+        <div class="text-black h-[17%] p-6 rounded-md">
+          <h4 class="text-center text-2xl">Alhamdulilah</h4>
+          <p class="text-center text-2xl mt-3">
+            <span id="alhamdulilah-display">0</span>
+          </p>
+          <div class="flex justify-center gap-2 mt-3">
+            <button
+              id="click-Alhamdulilah-Decrement"
+              class="bg-red-600 p-4 rounded-xl"
+            >
+              DECREMENT
+            </button>
+            <button
+              id="click-Alhamdulilah-increment"
+              class="bg-green-600 p-4 rounded-xl"
+            >
+              INCREMENT
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------Allahuakbar----------------- -->
+      <div class="border border-sky-600 rounded-2xl">
+        <div class="text-black h-[17%] p-6 rounded-md">
+          <h4 class="text-center text-2xl">Allahuakbar</h4>
+          <p class="text-center text-2xl mt-3">
+            <span id="allahuakbar-display">0</span>
+          </p>
+          <div class="flex justify-center gap-2 mt-3">
+            <button
+              id="click-Allahuakbar-Decrement"
+              class="bg-red-600 p-4 rounded-xl"
+            >
+              DECREMENT
+            </button>
+            <button
+              id="click-Allahuakbar-increment"
+              class="bg-green-600 p-4 rounded-xl"
+            >
+              INCREMENT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mt-8 text-center text-xl bg-orange-600 w-[15%] p-4 rounded-2xl mx-auto"
+    >
+      <button id="reset" class="items-center">Reset All Tasbih</button>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
