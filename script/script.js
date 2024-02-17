@@ -93,7 +93,17 @@ document.getElementById('click-Alhamdulilah-increment').addEventListener('click'
 
 
      document.getElementById('reset').addEventListener('click',function(){
-         subhanAllahInitialValue = 0;
-         alhamdulilahInitialValue = 0;
-         allahuakbarInitialValue = 0;
+        const takeDisplay = document.getElementById('subhanAllah-display');
+        const take1Display = document.getElementById('subhanAllah-display');
+        const take2Display = document.getElementById('alhamdulilah-display');
+        const take3Display = document.getElementById('alhamdulilah-display');
+        const take4Display = document.getElementById('allahuakbar-display');
+        const take5Display = document.getElementById('allahuakbar-display');
+        takeDisplay.innerText = 0
+        take1Display.innerText = 0
+        take2Display.innerText = 0
+        take3Display.innerText = 0
+        take4Display.innerText = 0
+        take5Display.innerText = 0
+       
      })
